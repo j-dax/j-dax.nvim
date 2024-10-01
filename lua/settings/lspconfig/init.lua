@@ -15,3 +15,8 @@ lspconfig.tsserver.setup {
 
 -- Tailwindcss
 lspconfig.tailwindcss.setup {}
+
+lspconfig.gopls.setup {}
+
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pylsp
+require('lspconfig').pylsp.setup {}
