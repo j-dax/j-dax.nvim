@@ -1,0 +1,3 @@
+{
+  "cliPath": "/home/j/.nvm/versions/node/v22.8.0/bin/snyk", // The path where the CLI can be found, or where it should be downloaded to
+}

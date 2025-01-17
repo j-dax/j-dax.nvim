@@ -61,6 +61,8 @@ require('lazy').setup({
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
+
+  -- various loaded modules. no i will not elaborate
   require 'settings.lazy.gitsigns',
   require 'settings.lazy.which-key',
   require 'settings.lazy.telescope',
@@ -75,7 +77,8 @@ require('lazy').setup({
   require 'settings.lazy.mini',
   require 'settings.lazy.nvim-treesitter',
   { 'nvim-treesitter/nvim-treesitter-context' },
-  require 'settings.lazy.cody',
+  require 'settings.lazy.llm',
+  require 'settings.lazy.outline',
 
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
