@@ -72,7 +72,8 @@ require('lazy').setup({
   require 'settings.lazy.nvim-lspconfig',
   require 'settings.lazy.conform',
   require 'settings.lazy.nvim-cmp',
-  require 'settings.lazy.tokyonight',
+  -- require 'settings.lazy.tokyonight', -- Default kickstart theme
+  require 'settings.lazy.nightfox',
   require 'settings.lazy.todo-comments',
   require 'settings.lazy.mini',
   require 'settings.lazy.nvim-treesitter',
