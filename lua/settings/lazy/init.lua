@@ -72,6 +72,9 @@ require('lazy').setup({
   require 'settings.lazy.nvim-lspconfig',
   require 'settings.lazy.conform',
   require 'settings.lazy.nvim-cmp',
+  { 'hrsh7th/cmp-nvim-lsp' },
+  { 'L3MON4D3/LuaSnip' },
+  { 'saadparwaiz1/cmp_luasnip' },
   -- require 'settings.lazy.tokyonight', -- Default kickstart theme
   require 'settings.lazy.nightfox',
   require 'settings.lazy.todo-comments',

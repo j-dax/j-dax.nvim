@@ -1,3 +1,6 @@
+-- This is where we setup each langauge server
+--  They each call lspconfig[server].setup( ... )
+--  using the arguments provided below
 return {
   -- clangd = {},
   -- gopls = {},
@@ -25,4 +28,28 @@ return {
       },
     },
   },
+  omnisharp = {
+    cmd = {
+      'omnisharp',
+      '--languageserver',
+      '--hostPID',
+      tostring(vim.fn.getpid()),
+    },
+    settings = {
+      FormattingOptions = {
+        -- Enables support for reading code style, naming convention and analyzer
+        -- settings from .editorconfig.
+        EnableEditorConfigSupport = true,
+        -- Specifies whether 'using' directives should be grouped and sorted during
+        -- document formatting.
+        OrganizeImports = nil,
+      },
+    },
+  },
+  ts_ls = {
+    -- root_dir = lspconfig.util.root_pattern('deno.json', 'deno.jsonc'),
+    single_file_support = false,
+  },
+  tailwindcss = {},
+  pylsp = {},
 }
